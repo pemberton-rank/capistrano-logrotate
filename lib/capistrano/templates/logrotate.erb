@@ -1,7 +1,8 @@
 <%= fetch(:logrotate_log_path) %>/*.log {
     daily
-    rotate 52
-
+    rotate 30
+    
+    size 50MB
     missingok
     compress
     delaycompress
